@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b2a514a03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo2.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu() ">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">ContactMe</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span >Manav</span> <br> Goyal from India</h1>
+                <!-- <a href="newcv.pdf" download class="button btn2 btn3" >Download CV</a> -->
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic.jpeg" id="pic" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Comuter Science graduate passionate about Problem Solving and web development.
+                        Proficent in a range of modern technologies including 'Data Structures and Algorithm' , ReactJS and JavaScript.
+                        Never making long goals always making small plans and try to make my present day beautiful.
+                        I belive in my own dream and I will utilize my all strength to fulfill them.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Acheivement')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul class="skills con">
+                            <div class="col1">
+                                <li><span><i class="fa-brands fa-html5"></i>HTML :</span>  Hyper Text Markup Language</li>
+                                <li><span><i class="fa-brands fa-css3"></i>CSS :</span>  Cascading Style Sheet</li>
+                                <li><span><i class="fa-brands fa-js"></i> JS :</span> JavaScript</li>
+                            </div>
+                            <div class="col2 ">
+                                <li><span><i class="fa-brands fa-react"></i> ReactJS :</span>  JS Library </li>
+                                <li><span><i class="fa-brands fa-bootstrap"></i> BootStrap :</span>  CSS FrameWork</li>
+                                <li><span><i class="fa-solid fa-pencil"></i> Data Structures & Algorithm :</span>  using C++ Language</li>                        
+                            </div>
+                        </ul>
+                    </div>
+
+
+                    <!-- Achivements-->
+                    <div class="tab-contents" id="Acheivement">
+                        <ul class="skills con">
+                            <div class="col1">
+                                <li><span>Top Performer :</span>Awarded a Certificate of Excellence By Coding Ninja in Data Structures & Algorithim  </li>
+                                <li><span>Problem Solving : </span>Solved 450+ Question on Data Structures </li>
+                                <li><span>Web development :</span>Awarded a Certificate for Completing Web development Course By Programming Pathshala. </li>
+                            </div>
+                    </div>  
+
+
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul class="skills con">
+                            <div class="col1">
+                                <li><span>2023-Current :</span>Currently pursuing B.Tech in Computer Sceience from Lovely Proffesional University. </li>
+                                <li><span> 2019-2020 :</span>Completed Inter from GRD Academy, Dehradun Uttarakhand. </li>
+                                <li><span>2017-2018 :</span>Completed Matric From Drona's International School , Dehradun Uttarakhand. </li>
+                            </div>
+                    </div>  
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services -->
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <br>
+                    <p>I am a Front-End Developer and can make beautiful  websites using Technologies like Html ,Css, JavaScript,And ReactJS</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Responsive Design</h2>
+                    <br>
+                    <p> I can make fully Responsive website which can work and responsive in all screen devices with the help of media Queries.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h2>PhotoShop</h2>
+                    <br>
+                    <p>I also know photo Editing, and make graphics for website layouts and Creating of beautiful Logos and Banners.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Problem Solving</h2>
+                    <br>
+                    <p>I am also  Proficent in Solving problems related Data Structures And Algorithim.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="netflix.jpeg" alt="">
+                    <div class="layer">
+                        <h3>NETFLIX APP</h3>
+                        <p>This is the Netflix movie app It is build using tecnologies HTML,CSS,JavaScript. </p>
+                        <a href="https://manavnetfixapp.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="news.jpeg" alt="">
+                    <div class="layer">
+                        <h3>NEWS  APP</h3>
+                        <p>This is the Daily News app build using ReactJS and NewsApi. </p>
+                        <a href="https://github.com/Manav0111/react_upload"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="snake1.jpeg" alt="">
+                    <div class="layer">
+                        <h3>SNAKE GAME</h3>
+                        <p>This is Famous Snake Game build using Technologies Html,Css, JavaScript . </p>
+                        <a href="https://snakegamebymanav.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="kbcphotoshop.jpg" alt="">
+                    <div class="layer">
+                        <h3>KBC QUIZ GAME</h3>
+                        <p>This is Famous game Kaun Banega CrorePati Quiz Game build using ReactJS. </p>
+                        <a href="https://ouizmanav.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Manav0111?tab=repositories" class="btn">See More</a>
+
+        </div>
+    </div>
+
+
+
+    <!-- Conatact-->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> manav011102@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i> 9997176009</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/Manav97846460"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/manav-goyal-84701b250/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/manav0111_02/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="resumecv.pdf " download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required >
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; Manav Goyal</p>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+
+        const opentab=(tabname)=>{
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link")
+            }
+
+            for( tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+
+
+        }
+
+
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        const openmenu=()=>{
+            sidemenu.style.right='0';
+
+        }
+
+        const closemenu=()=>{
+            sidemenu.style.right='-200px';
+            
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwmpfjdrDpzBLKNUcoCDh54hXA53k-zlqdCXpX3_59dDH3srEfU2aH8wQcmXlRdK1M/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const  msg=document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent Successfully";
+            setTimeout(()=>{
+                msg.innerHTML="";
+            },5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
